@@ -4,18 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CloudCore-Landing-page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-
+        <nav> 
+            <a href="#slideshow"> Início </a>
+            <a href='#contato'> Contato </a>
+            <a href="#quiz"> Quiz </a>
+        </nav>
     </header>
 
-    <section>
-    
+    <section id="temas">
+        <button id="tema-claro">Tema Claro</button>
+        <button id="tema-escuro">Tema Escuro</button>
+        <button id="tema-espacial">Tema Espacial</button>
     </section>
 
+    <section id="slideshow">
+        <img id="imagem-slide" src="" alt="Slide">
+        <button id="btn-anterior">Anterior</button>
+        <button id="btn-proximo">Próximo</button> 
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <form id="formulario">
+            <input type="text" id="nome" placeholder="Seu nome">
+            <input type="email" id="email" placeholder="Seu e-mail">
+            <textarea id="mensagem" placeholder="Sua mensagem"></textarea>
+            <button type="button" id="btn-enviar">Enviar </button>
+            <p id="feedback-form"></p>
+        </form>
+    </section>
+
+    <section id="quiz">
+        <h2>Quiz</h2>
+        <p id="pergunta"></p>
+        <div id="opcoes"></div>
+        <p id="resultado-quiz"></p>
+        <button id="btn-proximo-pergunta" style="display:none">Próxima</button>
+    </section>
+    
     <footer>
-        
+        <p ide="integrantes"></p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
