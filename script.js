@@ -181,7 +181,7 @@ btnProximaPergunta.addEventListener('click', function() {
         perguntaEL.textContent = 'Quiz finalizado!'
         opcoesEl.innerHTML = ''
         resultadoEl.textContent = 'Você acertou ' + acertos + ' de ' + perguntas.length + ' perguntas.'
-        resultadoEl.style.color = 'black'
+        resultadoEl.style.color = ''
         btnProximaPergunta.style.display = 'none'
         btnReiniciar.style.display = 'inline'
         return
