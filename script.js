@@ -162,6 +162,11 @@ function carregarPergunta() {
                 resultadoEl.textContent = 'Errado!'
                 resultadoEl.style.color = 'red'
             }
+
+            const botoes = document.querySelectorAll('#opcoes button')
+            botoes.forEach(function(b) {
+                b.disabled = true
+            })
             btnProximaPergunta.style.display = 'inline'
         })
         opcoesEl.appendChild(btn)
