@@ -11,3 +11,12 @@
 **O que a IA retornou:** Código JavaScript com array de objetos contendo perguntas, opções e resposta correta, além da lógica de navegação entre perguntas e exibição do resultado final
 
 **O que foi alterado ou rejeitado:** Código utilizado sem alterações. As perguntas foram revisadas pelo integrante Rafael. Porém, podem sofrer alterações. 
+
+## Interação 3
+**O que foi solicitado:** Implementação de responsavidade para dispositivos móveis
+
+**O que a IA retornou:** Código CSS com media query para telas menores que 768px, ajustando nav, slideshow, imagens, opções do quiz e formulario para layout em coluna
+
+**O que foi alterado ou rejeitado:** Código utilizado sem alterações
+
+
