@@ -144,6 +144,7 @@ const perguntaEL = document.querySelector('#pergunta')
 const opcoesEl = document.querySelector('#opcoes')
 const resultadoEl = document.querySelector('#resultado-quiz')
 const btnProximaPergunta = document.querySelector('#btn-proximo-pergunta')
+const btnReiniciar = document.querySelector('#btn-reiniciar')
 
 function carregarPergunta() {
     const atual = perguntas[indicePergunta]
@@ -182,6 +183,7 @@ btnProximaPergunta.addEventListener('click', function() {
         resultadoEl.textContent = 'Você acertou ' + acertos + ' de ' + perguntas.length + ' perguntas.'
         resultadoEl.style.color = 'black'
         btnProximaPergunta.style.display = 'none'
+        btnReiniciar.style.display = 'inline'
         return
     }
 
@@ -191,3 +193,12 @@ btnProximaPergunta.addEventListener('click', function() {
 })
 
 carregarPergunta()
+
+btnReiniciar.addEventListener('click', function() {
+    indicePergunta = 0
+    acertos = 0
+    resultadoEl.textContent = ''
+    btnReiniciar.style.display = 'none'
+    btnProximaPergunta.style.display = 'none'
+    carregarPergunta()
+})
