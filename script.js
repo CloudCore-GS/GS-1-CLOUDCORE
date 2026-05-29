@@ -56,4 +56,21 @@ btnAnterior.addEventListener('click', function() {
     imgSlide.alt = legendas[indiceSlide]
 })
 
+const btnEnviar = document.querySelector('#btn-enviar')
+const feedbackForm = document.querySelector('#feedback-form')
+
+btnEnviar.addEventListener('click', function() {
+    const nome = document.querySelector('#nome').value
+    const email = document.querySelector('#email').value
+    const mensagem = document.querySelector('#mensagem').value
+
+    if (nome === '' || email === '' || mensagem === '') {
+        feedbackForm.textContent = 'Preencha todos os campos antes de enviar.'
+        feedbackForm.style.color = 'red'
+        return
+    }
+
+    feedbackForm.textContent = 'Mensagem enviada com sucesso!'
+    feedbackForm.style.color = 'green'
+})
 
