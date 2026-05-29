@@ -4,3 +4,10 @@
 **O que a IA retornou:** Código JavaScript com array de imagens, array de legendas, índice e eventos de clique nos botões 
 
 **O que foi alterado ou rejeitado:** Código utilizado sem alterações. Imagens selecionadas pelo integrante Rafael de acordo com o tema do projeto. 
+
+## Interação 2
+**O que foi solicitado:** Implementação do quiz dinâmico com 10 perguntas sobre o tema espacial e monitoramento climático
+
+**O que a IA retornou:** Código JavaScript com array de objetos contendo perguntas, opções e resposta correta, além da lógica de navegação entre perguntas e exibição do resultado final
+
+**O que foi alterado ou rejeitado:** Código utilizado sem alterações. As perguntas foram revisadas pelo integrante Rafael. Porém, podem sofrer alterações. 
