@@ -1,0 +1,36 @@
+@media (max-width: 768px) {
+    nav {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #slideshow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #imagem-slide {
+        width: 100%;
+        height: auto;
+    }
+
+    #opcoes {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    #formulario {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    
+    input, textarea {
+        width: 100%;
+    }
+}
