@@ -65,7 +65,13 @@ btnEnviar.addEventListener('click', function() {
     const mensagem = document.querySelector('#mensagem').value
 
     if (nome === '' || email === '' || mensagem === '') {
-        feedbackForm.textContent = 'Preencha todos os campos antes de enviar.'
+        let camposVazios = []
+
+        if (nome === '') camposVazios.push ('Nome')
+        if (email === '') camposVazios.push('E-mail')
+        if (mensagem === '') camposVazios.push('Mensagem')
+
+        feedbackForm.textContent = 'Preencha os campos: ' + camposVazios.join(', ')
         feedbackForm.style.color = 'red'
         return
     }
