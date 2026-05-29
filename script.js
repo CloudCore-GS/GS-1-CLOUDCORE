@@ -32,11 +32,13 @@ const legendas = [
 let indiceSlide = 0
 
 const imgSlide = document.querySelector('#imagem-slide')
+const legendaSlide = document.querySelector('#legenda-slide')
 const btnAnterior = document.querySelector('#btn-anterior')
 const btnProximo = document.querySelector ('#btn-proximo')
 
 imgSlide.src = imagens[0]
 imgSlide.alt = legendas[0]
+legendaSlide.textContent = legendas[0]
 
 btnProximo.addEventListener('click', function() {
     indiceSlide = indiceSlide + 1
@@ -44,7 +46,8 @@ btnProximo.addEventListener('click', function() {
         indiceSlide = 0
     }
     imgSlide.src = imagens [indiceSlide]
-    imgSlide.alt = legendas [indiceSLide]
+    imgSlide.alt = legendas [indiceSlide]
+    legendaSlide.textContent = legendas[indiceSlide]
 })
 
 btnAnterior.addEventListener('click', function() {
@@ -54,6 +57,7 @@ btnAnterior.addEventListener('click', function() {
     }
     imgSlide.src = imagens[indiceSlide]
     imgSlide.alt = legendas[indiceSlide]
+    legendaSlide.textContent = legendas[indiceSlide]
 })
 
 const btnEnviar = document.querySelector('#btn-enviar')
