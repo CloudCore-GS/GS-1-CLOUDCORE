@@ -220,9 +220,13 @@ function carregarPergunta() {
                 acertos = acertos + 1
                 resultadoEl.textContent = 'Correto!'
                 resultadoEl.style.color = 'green'
+                btn.style.background = 'green'
+                btn.style.color = 'white'
             } else {
                 resultadoEl.textContent = 'Errado!'
                 resultadoEl.style.color = 'red'
+                btn.style.background = 'red'
+                btn.style.color = 'white'
             }
 
             const botoes = document.querySelectorAll('#opcoes button')
