@@ -48,14 +48,18 @@ imgSlide.src = imagens[0]
 imgSlide.alt = legendas[0]
 legendaSlide.textContent = legendas[0]
 
+function atualizarSlide() {
+    imgSlide.src = imagens[indiceSlide]
+    imgSlide.alt = legendas[indiceSlide]
+    legendaSlide.Slide.textContent = legendas [indiceSlide]
+}
+
 btnProximo.addEventListener('click', function() {
     indiceSlide = indiceSlide + 1
     if (indiceSlide === imagens.length) {
         indiceSlide = 0
     }
-    imgSlide.src = imagens [indiceSlide]
-    imgSlide.alt = legendas [indiceSlide]
-    legendaSlide.textContent = legendas[indiceSlide]
+    atualizarSlide()
 })
 
 btnAnterior.addEventListener('click', function() {
@@ -63,10 +67,17 @@ btnAnterior.addEventListener('click', function() {
     if (indiceSlide < 0) {
         indiceSlide = imagens.length - 1
     }
-    imgSlide.src = imagens[indiceSlide]
-    imgSlide.alt = legendas[indiceSlide]
-    legendaSlide.textContent = legendas[indiceSlide]
+    atualizarSlide()
 })
+
+//Troce de slide automaticamente a cada 5 segundos
+setInterval(function() {
+    indiceSlide = indiceSlide + 1
+    if (indiceSlide === imagens.length) {
+        indiceSlide = 0
+    }
+    atualizarSlide()
+}, 5000)
 
 // FORMULÁRIO COM VALIDAÇÃO
 const btnEnviar = document.querySelector('#btn-enviar')
