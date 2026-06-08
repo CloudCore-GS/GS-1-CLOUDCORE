@@ -12,6 +12,8 @@
 
 **O que foi alterado ou rejeitado:** Código utilizado sem alterações. As perguntas foram revisadas pelo integrante Rafael. Porém, podem sofrer alterações. 
 
+ATUALIZAÇÃO: Perguntas sofreram alterações.
+
 ## Interação 3
 **O que foi solicitado:** Implementação de responsavidade para dispositivos móveis
 
