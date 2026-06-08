@@ -1,28 +1,35 @@
+// TROCA DO TEMA
 const temaClaroBtn = document.querySelector("#tema-claro")
 const temaEscuroBtn = document.querySelector("#tema-escuro")
 const temaEspacialBtn = document.querySelector("#tema-espacial")
 
+// Aplica o tema claro ao clicar 
 temaClaroBtn.addEventListener('click', function() {
     document.querySelector('body').style.background = '#ffffff'
     document.querySelector('body').style.color = '#000000'
 })
 
+// Aplica o tema escuro ao cliclar
 temaEscuroBtn.addEventListener('click', function() {
     document.querySelector('body').style.background = '#1a1a1a'
     document.querySelector('body').style.color = '#ffffff'
 })
 
+// Aplicar o tema espacial ao clicar
 temaEspacialBtn.addEventListener('click', function() {
     document.querySelector('body').style.background = '#0a0a2e'
     document.querySelector('body').style.color = '#00ffff'
 })
 
+// SLIDESHOW
+// Array com os caminhos das imagens do slideshow
 const imagens = [
     'imagens/slide1.jpg',
     'imagens/slide2.jpg',
     'imagens/slide3.jpg'
 ]
 
+// Array com as lagendas correspondentes a cada imagem
 const legendas = [
     'Enchente monitorada por satélite',
     'Queimada monitorada por satélite',
@@ -31,6 +38,7 @@ const legendas = [
 
 let indiceSlide = 0
 
+// Seleciona os elementos do slideshow no HTML
 const imgSlide = document.querySelector('#imagem-slide')
 const legendaSlide = document.querySelector('#legenda-slide')
 const btnAnterior = document.querySelector('#btn-anterior')
@@ -60,6 +68,7 @@ btnAnterior.addEventListener('click', function() {
     legendaSlide.textContent = legendas[indiceSlide]
 })
 
+// FORMULÁRIO COM VALIDAÇÃO
 const btnEnviar = document.querySelector('#btn-enviar')
 const feedbackForm = document.querySelector('#feedback-form')
 
@@ -83,6 +92,9 @@ btnEnviar.addEventListener('click', function() {
     feedbackForm.textContent = 'Mensagem enviada com sucesso!'
     feedbackForm.style.color = 'green'
 })
+
+// QUIZ
+// Array de objetos com as perguntas, opções e índice da resposta correta
 
 const perguntas = [
     {
@@ -151,6 +163,7 @@ function carregarPergunta() {
     perguntaEL.textContent = (indicePergunta + 1) + '. ' + atual.pergunta
     opcoesEl.innerHTML = ''
 
+    // Cria um botão para cada opção de resposta
     atual.opcoes.forEach(function(opcao, i) {
         const btn = document.createElement('button')
         btn.textContent = opcao
