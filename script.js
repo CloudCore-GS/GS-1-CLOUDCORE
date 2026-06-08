@@ -146,28 +146,33 @@ btn.Diagnostico.addEventListener('click', function () {
 
 const perguntas = [
     {
-        pergunta: 'Qual agência espacial opera o satélite Landsat, usado para monitoramento ambiental?',
-        opcoes: ['ESA', 'NASA', 'INPE', 'SpaceX'],
+        pergunta: 'Qual índice avalia a saúde da vagetação via satélite?',
+        opcoes: ['NDVI', 'GPS', 'Fahrenheit', 'Celsius'],
+        correta: 0
+    },
+    {
+        pergunta: 'Quais satélites europeus ajudam na observação terrestre?',
+        opcoes: ['Apollo', 'Sentinel', 'Sputnik', 'Hubble'],
         correta: 1
     },
     {
-        pergunta: 'O que é sensoriamento remoto?',
-        opcoes: ['Controle de satélites à distância','Coleta de dados sem contato direto com o objeto', 'Comunicação entre satélites', 'Monitoramento de temperatura'],
+        pergunta: 'O que o sensoriamento remoto espacial mede nas plantas?',
+        opcoes: ['Cheiro', 'Refletividade da luz', 'Sabor', 'Peso'],
         correta: 1
     },
     {
-        pergunta: 'Qual instituto brasileiro opera satélites de monitoramento ambiental?',
-        opcoes: ['IBGE', 'INPE', 'EMBRAPA', 'ANVISA'],
+        pergunta: 'O desmatamento ilegal pode ser monitorado mesmo com nuvens usando...',
+        opcoes: ['Telescópios ópticos', 'Radares SAR', 'Drones simples', 'Termômetros'],
         correta: 1
     },
     {
-        pergunta: 'Qual fenômeno climático pode ser monitorado por satélite para emitir alertas de enchentes?',
-        opcoes: ['Terremetos', 'Chuvas intensas', 'Maremotos', 'Erupções vulcânicas'],
+        pergunta: 'A agricultura de precisão usa satélites para evitar o desperdício de...',
+        opcoes: ['Sementes sintéticas', 'Água e insumos', 'Tratores', 'Luz solar'],
         correta: 1
     },
     {
-        pergunta: 'O que significa a sigla ODS?',
-        opcoes: ['Objetivos de Desenvolvimento Sustentável', 'Organização de Dados Satelitais', 'Operação de Sistemas', 'Objetivos de Defesa Social'],
+        pergunta: 'Satélites meteorológicos geoestacionários ficam...',
+        opcoes: ['Fixos sobre o mesmo ponto da Terra', 'Mudando de órbita a cada hora', 'Pousados na Lua', 'Fora do sistema solar'],
         correta: 0
     },
     {
@@ -176,23 +181,18 @@ const perguntas = [
         correta: 2
     },
     {
-        pergunta: 'Qual é a principal vantagem do monitoramento por satélite em áreas remotas?',
-        opcoes: ['Menor custo de internet', 'Cobertura de regiões sem infraestrutura terrestre', 'Maior velocidade de Dados', 'Melhor qualidade de imagem'],
+        pergunta: 'Qual instituto brasileiro opera satélites de monitoramento ambiental?',
+        opcoes: ['IBGE', 'INPE', 'EMBRAPA', 'ANVISA'],
         correta: 1
     },
     {
-        pergunta: 'Qual empresa opera a maior constelação de satélites atualmente?',
-        opcoes: ['NASA', 'Blue Origin', 'SpaceX', 'Boeing'],
-        correta: 2
+        pergunta: 'O que os satélites de órbita baixa LEO fornecem para áreas isoladas?',
+        opcoes: ['Combustível', 'Internet banda larga', 'Energia eólica', 'Sementes'],
+        correta: 1
     },
     {
-        pergunta: 'O que são dados orbitais?',
-        opcoes: ['Dados coletados por sensores em satélites em órbita', 'Dados de voos comerciais', 'Informações sobre órbitas de planetas', 'Registros de lançamentos de foguetes'],
-        correta: 0
-    },
-    {
-        pergunta: 'Qual tecnologia permite conectar regiões remotas à internet via satélites?',
-        opcoes: ['Fibra óptica', 'LEO Satellite Internet', '5G', 'Cabo submarino'],
+        pergunta: 'Qual agência espacial opera o satélite Landsat usado para monitoramento ambiental?',
+        opcoes: ['ESA', 'NASA', 'INPE', 'SpaceX'],
         correta: 1
     }
 ]
