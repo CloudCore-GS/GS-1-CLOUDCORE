@@ -104,6 +104,43 @@ btnEnviar.addEventListener('click', function() {
     feedbackForm.style.color = 'green'
 })
 
+// Seleciona os elementso do diagnóstico NDVI
+const btnDiagnostico = document.querySelector('#btn-diagnostico')
+const resultadoDiagnostico = document.querySelector('#resultado-diagnostico')
+
+//Processa o diganóstico com base no valor NDVI informado
+btn.Diagnostico.addEventListener('click', function () {
+    const regiao = document.querySelector('#regiao').value.trim()
+    const ndviINput = document.querySelector('#ndvi').value.trim()
+
+    // Verifica se os campos estão preenchidos 
+    if (regiao === '' || ndviInput === '') {
+        resultadoDiagnostico.textContent = 'Preencha todos os campos do diagnóstico.'
+        resultadoDiagnostico.style.color = 'red'
+        return
+    }
+
+    const ndvi = parseFloat(ndviInput)
+
+    if(isNaN(ndvi) || ndvi < 0 || ndvi > 1) {
+        resultadoDiagnostico.textContent = 'O índice NDVI deve ser um número entre 0.0 e 1.0'
+        resultadoDiagnostico.style.color = 'red'
+        return
+    }
+
+    //Exibição do diagnóstico com base no valor NDVI
+    if(ndvi < 0.) {
+        resultadoDiagnostico.textContent = '⚠️ ' + regiao + ': RISCO CRÍTICO. Vegetação extremamente seca.'
+        resultadoDiagnostico.style.color =  '#ea580c'  
+    } else if (ndvi < 0.6) {
+        resultadoDiagnostico.textContent = '⚠️ ' + regiao + ': ALERTA. Estresse hídrico moderado detectado.'
+        resultadoDiagnostico.style.color = '#eab308'
+    } else {
+        resultadoDiagnostico.textContent = '✔️ ' + regiao + ': SEGURO. Vegetação densa e saudável.'
+        resultadoDiagnostico.style.color = '#16a34a'
+    }
+})
+
 // QUIZ
 // Array de objetos com as perguntas, opções e índice da resposta correta
 
