@@ -129,10 +129,10 @@ btnDiagnostico.addEventListener('click', function () {
     }
 
     //Exibição do diagnóstico com base no valor NDVI
-    if(ndvi <= 0.4) {
+    if(ndvi >= 0 && ndvi <= 0.4) {
         resultadoDiagnostico.textContent = '⚠️ ' + regiao + ': RISCO CRÍTICO. Vegetação extremamente seca.'
         resultadoDiagnostico.style.color =  '#ea580c'  
-    } else if (ndvi < 0.6) {
+    } else if (ndvi > 0.4 && ndvi < 0.6) {
         resultadoDiagnostico.textContent = '⚠️ ' + regiao + ': ALERTA. Estresse hídrico moderado detectado.'
         resultadoDiagnostico.style.color = '#eab308'
     } else {
