@@ -51,7 +51,7 @@ legendaSlide.textContent = legendas[0]
 function atualizarSlide() {
     imgSlide.src = imagens[indiceSlide]
     imgSlide.alt = legendas[indiceSlide]
-    legendaSlide.Slide.textContent = legendas [indiceSlide]
+    legendaSlide.textContent = legendas[indiceSlide]
 }
 
 btnProximo.addEventListener('click', function() {
@@ -84,9 +84,9 @@ const btnEnviar = document.querySelector('#btn-enviar')
 const feedbackForm = document.querySelector('#feedback-form')
 
 btnEnviar.addEventListener('click', function() {
-    const nome = document.querySelector('#nome').value
-    const email = document.querySelector('#email').value
-    const mensagem = document.querySelector('#mensagem').value
+    const nome = document.querySelector('#nome').value.trim()
+    const email = document.querySelector('#email').value.trim()
+    const mensagem = document.querySelector('#mensagem').value.trim()
 
     if (nome === '' || email === '' || mensagem === '') {
         let camposVazios = []
@@ -109,9 +109,9 @@ const btnDiagnostico = document.querySelector('#btn-diagnostico')
 const resultadoDiagnostico = document.querySelector('#resultado-diagnostico')
 
 //Processa o diganóstico com base no valor NDVI informado
-btn.Diagnostico.addEventListener('click', function () {
+btnDiagnostico.addEventListener('click', function () {
     const regiao = document.querySelector('#regiao').value.trim()
-    const ndviINput = document.querySelector('#ndvi').value.trim()
+    const ndviInput = document.querySelector('#ndvi').value.trim()
 
     // Verifica se os campos estão preenchidos 
     if (regiao === '' || ndviInput === '') {
