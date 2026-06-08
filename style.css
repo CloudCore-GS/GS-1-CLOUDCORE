@@ -43,7 +43,16 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 60px);
+    height: 75vh;
+    width: 92%;
+    max-width: 1400px;
+    margin: 90px auto 40px auto;
+    border-radius: 12px;
+    background-image: linear-gradient(rgba(11, 15, 25, 0.7), rgba(11, 15, 25, 0.7)),url(imagens/imagem\ ilustrativa.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #1e293b;
 }
 #inicio img {
     width: 90%;
