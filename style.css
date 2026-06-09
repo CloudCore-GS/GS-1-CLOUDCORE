@@ -448,6 +448,73 @@
     color: #94a3b8;
     margin: 0;
 }
+/*Beneficios*/
+.beneficios-section {
+    padding: 100px 4%;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.beneficios-grid {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 80px; 
+}
+
+.beneficios-title-block {
+    flex: 1;
+    max-width: 350px;
+}
+
+.beneficios-title-block h2 {
+    font-size: 2.8rem;
+    color: #ffffff;
+    line-height: 1.2;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 20px;
+    border-bottom: none; 
+    padding-bottom: 0;
+}
+
+.beneficios-title-block .highlight {
+    color: #00d2ff;
+    text-shadow: 0 0 20px rgba(0, 210, 255, 0.3);
+}
+
+.accent-line {
+    width: 60px;
+    height: 3px;
+    background-color: #00d2ff;
+    border-radius: 2px;
+}
+
+.beneficios-content {
+    flex: 2;
+    display: flex;
+    flex-direction: row; 
+    gap: 40px;
+    width: 100%;
+}
+
+.text-block {
+    flex: 1;
+}
+
+.text-block p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #94a3b8; 
+    text-align: left; 
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+.text-block:hover p {
+    color: #ffffff;
+}
+
     /* contato e quiz */
     section {
         padding: 60px 20px;
