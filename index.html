@@ -4,18 +4,212 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CloudCore-Landing-page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-
+        <button id="btn-menu" onclick="toggleMenu()">&#9776;</button>
+        <nav id="nav-menu"> 
+            <a href="#inicio" onclick="fecharMnu()"> Início </a>
+            <a href="#panorama" onclick="fecharMnu()"> Problema </a>
+            <a href="#agropredict" onclick="fecharMnu()"> Tecnologia </a>
+            <a href="#objetivos" onclick="fecharMnu()"> Objetivos </a>
+            <a href="#publico" onclick="fecharMnu()"> Público-Alvo </a>
+            <a href="#beneficios" onclick="fecharMnu()"> Benefícios </a>
+            <a href='#contato' onclick="fecharMnu()"> Contato </a>
+            <a href="#day" onclick="fecharMnu()"> Aplicação no dia a dia </a>
+            <a href="#quiz" onclick="fecharMnu()"> Quiz </a>
+            <a href="#diagnostico" onclick="fecharMnu()">Diagnóstico</a>
+        </nav>
     </header>
 
-    <section>
-    
+    <section id="inicio">
+        <img src="imagens/logo CLOUDCORE.png" alt="Cloudcore">
+    </section>
+    <section id="temas">
+        <button id="tema-claro">Tema Claro</button>
+        <button id="tema-escuro">Tema Escuro</button>
+        <button id="tema-espacial">Tema Espacial</button>
     </section>
 
-    <footer>
+   <section class="insight-card-section" id="panorama">
+        <div class="insight-container">
+            <h2 class="insight-main-title">Panorama Tecnológico e Territorial</h2>
+            
+            <div class="insight-grid">
+                <div class="insight-block">
+                    <div class="insight-text">
+                        <h3>O Contexto Tecnológico e a Indústria Espacial</h3>
+                        <p>A Nova Corrida Espacial é movida a software: o desafio atual é processar dados de satélites em soluções para a Terra.</p>
+                    </div>
+                    <div class="insight-img">
+                        <img src="imagens/imagem espaço tecnologia.png" alt="imagem gerada por IA de tecnologias espaciais">
+                    </div>
+                </div>
+
+                <div class="insight-block reverse">
+                    <div class="insight-text">
+                        <h3>A Problemática Territorial: O Flagelo das Queimadas e da Seca</h3>
+                        <p>As mudanças climáticas causam secas e queimadas devastadoras; a falta de sistemas preditivos impede a prevenção eficaz desses desastres.</p>
+                    </div>
+                    <div class="insight-img">
+                        <img src="imagens/imagem ilustrativa 2.png" alt="ilustração de ODS-13">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="solution-section" id="agropredict">
+        <div class="solution-grid">
+            <div class="solution-title-block">
+                <h2>Orion<br><span class="highlight">AgroPredict</span></h2>
+                <div class="accent-line"></div>
+            </div>
+            
+            <div class="solution-content">
+                <div class="text-block">
+                    <p>O Orion AgroPredict conecta dados de satélites à tecnologia IoT no solo para transformar o combate a incêndios em prevenção antecipada.</p>
+                </div>
+                <div class="text-block">
+                    <p>A plataforma cruza índices de vegetação espaciais com dados meteorológicos locais em tempo real, garantindo máxima eficiência e precisão agrícola.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section id="slideshow">
+        <img id="imagem-slide" src="" alt="Slide">
+        <p id="legenda-slide">Sátelite em órbita</p>
+        <div class="botoes-slide">
+            <button id="btn-anterior">&#8592;</button>
+            <button id="btn-proximo">&#8594;</button> 
+        </div>
+    </section>
+<section class="objetivos-section" id="objetivos">
+        <div class="objetivos-grid">
+            <div class="objetivos-content">
+                <div class="text-block-obj">
+                    <p>O Orion AgroPredict visa antecipar a prevenção de riscos no campo, substituindo o combate reativo por uma gestão agrícola preditiva.</p>
+                </div>
+                <div class="text-block-obj">
+                    <p>O objetivo é integrar dados espaciais de satélites com sensores IoT locais para garantir máxima precisão e preservação ambiental.</p>
+                </div>
+            </div>
+
+            <div class="objetivos-title-block">
+                <h2>Objetivos com a<br><span class="highlight-obj">Orion AgroPredict</span></h2>
+                <div class="accent-line-obj"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="insight-card-section2" id="publico">
+        <div class="insight-container2">
+            <h2 class="insight-main-title2">Público-Alvo</h2>
+            
+            <div class="insight-grid2">
+                <div class="insight-block2">
+                    <div class="insight-text2">
+                        <h3>Produtores & Empresas Agrícolas</h3>
+                        <p>Otimização de safra através do monitoramento hiperlocal. Evite perdas financeiras reduzindo o desperdício de insumos com dados em tempo real direto na raiz do problema.</p>
+                    </div>
+                </div>
+
+                <div class="insight-block2">
+                    <div class="insight-text2">
+                        <h3>Órgãos & Gestores Ambientais</h3>
+                        <p>Prevenção antecipada contra desastres ecológicos. Monitore biomas complexos e antecipe focos críticos de incêndio antes que se tornem incontroláveis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="beneficios-section" id="beneficios">
+        <div class="beneficios-grid">
+            <div class="beneficios-title-block">
+                <h2>Benefícios<br><span class="highlight">Orion AgroPredict</span></h2>
+                <div class="accent-line"></div>
+            </div>
+            
+            <div class="beneficios-content">
+                <div class="text-block">
+                    <h2>Preservação Ativa</h2> 
+                    <p>Transforma o combate a incêndios em prevenção antecipada, protegendo biomas inteiros antes que o fogo ganhe grandes proporções.</p>
+                </div>
+                <div class="text-block">
+                    <h2>Máxima Produtividade</h2>
+                     <p>Cruza dados espaciais com sensores locais para economizar água e insumos, agindo direto na raiz em tempo real.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <form id="formulario">
+            <input type="text" id="nome" placeholder="Seu nome">
+            <input type="email" id="email" placeholder="Seu e-mail">
+            <textarea id="mensagem" placeholder="Sua mensagem"></textarea>
+            <button type="button" id="btn-enviar">Enviar </button>
+            <p id="feedback-form"></p>
+        </form>
+    </section>
+
+    <section class="day-section" id="day">
+    <div class="day-grid">
         
+        <div class="day-title-block">
+            <h2>Dia a Dia<br><span class="highlight">Na prática</span></h2>
+            <div class="accent-line"></div>
+        </div>
+        
+        <div class="day-image-block">
+            <img src="imagens/imagem ilustrativa 3.png" alt="Monitoramento agrícola em tempo real" class="day-img">
+        </div>
+        
+        <div class="day-content">
+            <div class="text-block">
+                <h2>Gestão Proativa</h2> 
+                <p>O produtor inicia o dia visualizando alertas automáticos de estresse hídrico, inspecionando apenas os talhões que exigem atenção.</p>
+            </div>
+            <div class="text-block">
+                <h2>Ação Cirúrgica</h2>
+                <p>A plataforma direciona a irrigação e insumos exclusivamente onde os sensores indicam necessidade, gerando economia real no campo.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <section id="quiz">
+        <h2>Quiz</h2>
+        <p id="pergunta"></p>
+        <div id="opcoes"></div>
+        <p id="resultado-quiz"></p>
+        <button id="btn-proximo-pergunta" style="display:none">Próxima</button>
+        <button id="btn-reiniciar" style="display:none">Jogar novamente</button>
+    </section>
+
+    <!-- Diagnóstico NDVI -->
+    <section id="diagnostico">
+        <h2> Diagnóstico de Vegetação</h2>
+        <div id='formulario-diagnostico'> 
+            <input type="text" id="regiao" placeholder="Nome da região">
+            <input type="number" id="ndvi" placeholder="Índice NDVI (0.0 a 1.0)" step="0.01" min="0" max="1">
+            <button id ="btn-diagnostico">Analisar</button>
+            <p id="resultado-diagnostico"></p>
+         </div>
+    </section>
+    
+    <footer>
+        <p id="integrantes">© 2026 CloudCore - Todos os direitos reservados.</p>
+        <p> Aquilles Mello Mendonça | RM: 571465 &nbsp;|&nbsp; Bruno Pimentel Nunes | RM: 572599 &nbsp;|&nbsp; Rafael Falchi | RM: 570526 &nbsp;|&nbsp; Raul Kiyuna | RM: 569965 &nbsp;|&nbsp; Vitor Silva Lima da Silva | RM: 571124</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
