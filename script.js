@@ -288,3 +288,4 @@ function fecharMenu() {
     const nav = document.querySelector('#nav-menu')
     nav.classList.remove('aberto')
 }
+
