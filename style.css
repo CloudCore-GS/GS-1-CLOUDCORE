@@ -422,6 +422,15 @@
         margin-bottom: 20px;
         color:#ffffff
     }
+
+    #formulario-diagnostico {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        background-color: #1e293b;
+        padding: 30px;
+        border-radius: 10px;
+    }
     /* rodapé */
     footer {
         background-color: #070a12;
