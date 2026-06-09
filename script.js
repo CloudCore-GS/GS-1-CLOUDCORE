@@ -81,7 +81,7 @@ setInterval(function() {
         indiceSlide = 0
     }
     atualizarSlide()
-}, 3000)
+}, 4000)
 
 // FORMULÁRIO COM VALIDAÇÃO
 const btnEnviar = document.querySelector('#btn-enviar')

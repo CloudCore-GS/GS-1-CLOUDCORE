@@ -246,36 +246,6 @@
     color: #ffffff;
 }
 
-    /* seção principal */
-    #slideshow {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 40px 20px;
-        max-width: 800px;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    #imagem-slide {
-        width: 100%;
-        max-width: 600px;
-        height: auto;
-        border-radius: 10px;
-        box-shadow: 0 0 20px rgba(0, 210, 255, 0.2);
-        margin-bottom: 15px;
-    }
-
-    #legenda-slide {
-        font-size: 1.2rem;
-        margin-bottom: 15px;
-        color: #149fac;
-    }
-
-    .botoes-slide {
-        display: flex;
-        gap: 15px;
-    }
 /*Objetivos do orion agropredict*/
 .objetivos-section {
     padding: 100px 4%;
@@ -519,7 +489,6 @@
     /* contato e quiz */
     section {
         padding: 60px 20px;
-        max-width: 600px;
         margin: 0 auto;
         text-align: center;
     }
@@ -693,21 +662,24 @@
     /* resposividade */
 @media (max-width: 1024px) {
     .solution-grid, 
-    .objetivos-grid {
+    .objetivos-grid,
+    .beneficios-grid {
         flex-direction: column;
         align-items: center;
         gap: 40px;
     }
 
     .solution-title-block, 
-    .objetivos-title-block {
+    .objetivos-title-block,
+    .beneficios-title-block {
         max-width: 100%;
         text-align: center;
         align-items: center;
     }
 
     .solution-title-block h2, 
-    .objetivos-title-block h2 {
+    .objetivos-title-block h2,
+    .beneficios-title-block h2 {
         text-align: center;
     }
 
@@ -715,18 +687,38 @@
         flex-direction: column;
         gap: 25px;
     }
+
+    .solution-content,
+    .objetivos-content,
+    .beneficios-content {
+        flex-direction: column;
+        gap: 25px;
+    }
 }
 
 @media (max-width: 768px) {
     nav {
-        gap: 15px;
-        flex-wrap: wrap;
-        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        padding: 10px;
+        max-height: 300px;
+        overflow-y: auto;
+    }
+
+    nav a {
+        font-size: 0.85rem;
+    }
+
+    header {
+        padding: 10px 0;
     }
     
     #inicio {
         height: 55vh;
-        margin-top: 110px; 
+        margin-top: 220px; 
+        width: 96%;
     }
 
     #inicio img {
@@ -735,7 +727,7 @@
 
     #temas {
         flex-wrap: wrap;
-        margin-top: 40px;
+        margin-top: 20px;
     }
 
     button {
@@ -745,7 +737,7 @@
 
     .insight-container, 
     .insight-container2 {
-        padding: 35px 20px;
+        padding: 25px 15px;
     }
 
     .insight-main-title, 
@@ -764,25 +756,23 @@
         text-align: left;
     }
 
-    .solution-section, 
-    .objetivos-section {
-        padding: 60px 4%;
+    .insight-card-section,
+    .insight-card-section2,
+    .solution-section,
+    .objetivos-section,
+    .beneficios-section,
+    .day-section {
+        padding: 40px 4%;
     }
 
-    .solution-content, 
-    .objetivos-content {
-        flex-direction: column;
-        gap: 25px;
-    }
-
-    .solution-title-block h2, 
-    .objetivos-title-block h2 {
-        font-size: 2.2rem;
+    #slideshow {
+        max-width: 100%;
+        padding: 30px 15px;
     }
 
     #imagem-slide {
         height: auto; 
-        max-height: 320px;
+        max-height: 280px;
     }
 
     .botoes-slide button {
@@ -799,6 +789,24 @@
     #quiz {
         padding: 20px;
     }
+
+    .day-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .day-grid {
+        align-items: center;
+    }
+
+    .day-title-block {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .day-title-block h2 {
+        text-align: center;
+    }
 }
 
 @media (max-width: 480px) {
@@ -807,13 +815,11 @@
     }
 
     nav a {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
-}
 
-@media (max-width: 768px) {
-    .day-content {
-        flex-direction: column;
-        gap: 30px;
+    .insight-main-title,
+    .insight-main-title2 {
+        font-size: 1.5rem;
     }
 }
