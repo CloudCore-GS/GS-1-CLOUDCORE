@@ -245,6 +245,37 @@
 .text-block:hover p {
     color: #ffffff;
 }
+
+    /* seção principal */
+    #slideshow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #imagem-slide {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 210, 255, 0.2);
+        margin-bottom: 15px;
+    }
+
+    #legenda-slide {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+        color: #149fac;
+    }
+
+    .botoes-slide {
+        display: flex;
+        gap: 15px;
+    }
 /*Objetivos do orion agropredict*/
 .objetivos-section {
     padding: 100px 4%;
@@ -315,37 +346,6 @@
 .text-block-obj:hover p {
     color: #ffffff;
 }
-    /* seção principal */
-    #slideshow {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 40px 20px;
-        max-width: 800px;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    #imagem-slide {
-        width: 100%;
-        max-width: 600px;
-        height: auto;
-        border-radius: 10px;
-        box-shadow: 0 0 20px rgba(0, 210, 255, 0.2);
-        margin-bottom: 15px;
-    }
-
-    #legenda-slide {
-        font-size: 1.2rem;
-        margin-bottom: 15px;
-        color: #149fac;
-    }
-
-    .botoes-slide {
-        display: flex;
-        gap: 15px;
-    }
-
     /* contato e quiz */
     section {
         padding: 60px 20px;
