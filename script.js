@@ -49,9 +49,13 @@ imgSlide.alt = legendas[0]
 legendaSlide.textContent = legendas[0]
 
 function atualizarSlide() {
-    imgSlide.src = imagens[indiceSlide]
-    imgSlide.alt = legendas[indiceSlide]
-    legendaSlide.textContent = legendas[indiceSlide]
+    imgSlide.style.opacity = '0'
+    setTimeout(function() {
+        imgSlide.src = imagens[indiceSlide]
+        imgSlide.alt = legendas[indiceSlide]
+        legendaSlide.textContent = legendas[indiceSlide]
+        imgSlide.style.opacity = '1'
+    }, 500)
 }
 
 btnProximo.addEventListener('click', function() {
