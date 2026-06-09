@@ -100,6 +100,12 @@ btnEnviar.addEventListener('click', function() {
         return
     }
 
+    if (!email.includes('@') || !email.includes('.')) {
+        feedbackForm.textContent = 'Digite um e-mail válido.'
+        feedbackForm.style.color = 'red'
+        return
+    }
+
     feedbackForm.textContent = 'Mensagem enviada com sucesso!'
     feedbackForm.style.color = 'green'
 })
