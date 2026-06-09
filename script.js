@@ -77,7 +77,7 @@ setInterval(function() {
         indiceSlide = 0
     }
     atualizarSlide()
-}, 5000)
+}, 3000)
 
 // FORMULÁRIO COM VALIDAÇÃO
 const btnEnviar = document.querySelector('#btn-enviar')
@@ -96,6 +96,12 @@ btnEnviar.addEventListener('click', function() {
         if (mensagem === '') camposVazios.push('Mensagem')
 
         feedbackForm.textContent = 'Preencha os campos: ' + camposVazios.join(', ')
+        feedbackForm.style.color = 'red'
+        return
+    }
+
+    if (!email.includes('@') || !email.includes('.')) {
+        feedbackForm.textContent = 'Digite um e-mail válido.'
         feedbackForm.style.color = 'red'
         return
     }
@@ -146,7 +152,7 @@ btnDiagnostico.addEventListener('click', function () {
 
 const perguntas = [
     {
-        pergunta: 'Qual índice avalia a saúde da vagetação via satélite?',
+        pergunta: 'Qual índice avalia a saúde da vegetação via satélite?',
         opcoes: ['NDVI', 'GPS', 'Fahrenheit', 'Celsius'],
         correta: 0
     },
