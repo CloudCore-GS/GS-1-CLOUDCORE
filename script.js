@@ -146,7 +146,7 @@ btnDiagnostico.addEventListener('click', function () {
 
 const perguntas = [
     {
-        pergunta: 'Qual índice avalia a saúde da vagetação via satélite?',
+        pergunta: 'Qual índice avalia a saúde da vegetação via satélite?',
         opcoes: ['NDVI', 'GPS', 'Fahrenheit', 'Celsius'],
         correta: 0
     },
