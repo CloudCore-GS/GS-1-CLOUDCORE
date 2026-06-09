@@ -245,6 +245,76 @@
 .text-block:hover p {
     color: #ffffff;
 }
+/*Objetivos do orion agropredict*/
+.objetivos-section {
+    padding: 100px 4%;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.objetivos-grid {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 80px; 
+}
+
+.objetivos-title-block {
+    flex: 1;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+}
+
+.objetivos-title-block h2 {
+    font-size: 2.8rem;
+    color: #ffffff;
+    line-height: 1.2;
+    font-weight: 700;
+    text-align: right;
+    margin-bottom: 20px;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.objetivos-title-block .highlight-obj {
+    color: #00d2ff;
+    text-shadow: 0 0 20px rgba(0, 210, 255, 0.3);
+}
+
+.accent-line-obj {
+    width: 60px;
+    height: 3px;
+    background-color: #00d2ff;
+    border-radius: 2px;
+}
+
+.objetivos-content {
+    flex: 2;
+    display: flex;
+    flex-direction: row; 
+    gap: 40px;
+    width: 100%;
+}
+
+.text-block-obj {
+    flex: 1;
+}
+
+.text-block-obj p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #94a3b8; 
+    text-align: left;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.text-block-obj:hover p {
+    color: #ffffff;
+}
     /* seção principal */
     #slideshow {
         display: flex;
@@ -366,14 +436,3 @@
             font-size: 1.6rem;
         }
     }  
-    @media (max-width: 900px) {
-        .intro-content {
-            flex-direction: column; 
-            gap: 20px;
-        }
-        
-        .img-intro {
-            width: 100%;
-            max-width: 1000px; 
-        }
-    }
