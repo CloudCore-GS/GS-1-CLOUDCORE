@@ -809,3 +809,10 @@
         font-size: 0.9rem;
     }
 }
+
+@media (max-width: 768px) {
+    .day-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
