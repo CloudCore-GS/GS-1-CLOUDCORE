@@ -21,4 +21,10 @@ ATUALIZAÇÃO: Perguntas sofreram alterações.
 
 **O que foi alterado ou rejeitado:** Código utilizado sem alterações
 
+## Interação 4
+**O que foi solicitado:** Validação do campo de e-mail no formulário para aceitar apenas endereços no formato correto
+
+**O que a IA retornou:** Código em JavaScript com expressão regular que verifica se o e-mail contém o formato algo@algo.algo antes de permitir o envio
+
+**O que foi alterado ou rejeitado:** Código utilizado sem alterações 
 

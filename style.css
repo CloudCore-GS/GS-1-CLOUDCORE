@@ -173,7 +173,16 @@ button:hover {
 
 .botoes-slide {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     gap: 15px;
+    width: 100%;
+}
+
+.botoes-slide button {
+    font-size: 1.8rem;
+    padding: 10px 20px;
+    line-height: 1;
 }
 
 /* contato e quiz */
