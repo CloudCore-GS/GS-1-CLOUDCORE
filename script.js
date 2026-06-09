@@ -277,3 +277,14 @@ btnReiniciar.addEventListener('click', function() {
     btnProximaPergunta.style.display = 'none'
     carregarPergunta()
 })
+
+//Botão Hamburguer
+function toggleMenu() {
+    const nav = document.querySelector('#nav-menu')
+    nav.classList.toggle('aberto')
+}
+
+function fecharMenu() {
+    const nav = document.querySelector('#nav-menu')
+    nav.classList.remove('aberto')
+}

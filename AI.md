@@ -28,3 +28,10 @@ ATUALIZAÇÃO: Perguntas sofreram alterações.
 
 **O que foi alterado ou rejeitado:** Código utilizado sem alterações 
 
+## Interação 5
+
+**O que foi solicitado:** Melhoria da responsividade mobile do projeto após diversas adições de seções e conteúdo
+
+**O que a IA retornou:** Código CSS com media queries reorganizadas e unificadas para telas menores que 1024px, 768px e 480px, ajustando navbar, seções, slideshow, formulário, quiz e blocos de conteúdo
+
+**O que foi alterado ou rejeitado:** Código utilizado com ajustes pontuais identificados pelo aluno, como remoção de duplicatas e correção do max-height da navbar

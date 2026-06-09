@@ -659,6 +659,11 @@
         border-top: 1px solid #1e293b;
     }
 
+/*Botão hamburguer - escondido no desktop */
+#btn-menu {
+    display: none;
+}
+
     /* resposividade */
 @media (max-width: 1024px) {
     .solution-grid, 
@@ -696,19 +701,51 @@
     }
 }
 
+
 @media (max-width: 768px) {
+    #btn-menu {
+        display: block;
+        position: fixed;
+        top: 15px;
+        right: 20px;
+        z-index: 1001;
+        background: transparent;
+        color: #00d2ff;
+        font-size: 1.8rem;
+        border: none;
+        cursor: pointer;
+        padding: 5px;
+    }
+    
+    #btn-menu:hover {
+        background: transparent;
+        color: #ffffff;
+
+    }
     nav {
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: center;
-        gap: 8px;
-        padding: 10px;
-        max-height: 300px;
+        gap: 12px;
+        padding: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(11, 15, 25, 0.98);
+        z-index: 1000;
+        justify-content: center;
+        max-height: none;
         overflow-y: auto;
     }
 
+       nav.aberto {
+        display: flex;
+    }
+
     nav a {
-        font-size: 0.85rem;
+        font-size: 1.2rem;
     }
 
     header {
@@ -823,3 +860,4 @@
         font-size: 1.5rem;
     }
 }
+
