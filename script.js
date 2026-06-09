@@ -77,7 +77,7 @@ setInterval(function() {
         indiceSlide = 0
     }
     atualizarSlide()
-}, 5000)
+}, 3000)
 
 // FORMULÁRIO COM VALIDAÇÃO
 const btnEnviar = document.querySelector('#btn-enviar')
