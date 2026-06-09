@@ -534,16 +534,122 @@
     }
 
     /* resposividade */
-    @media (max-width: 768px) {
-        nav {
-            gap: 15px;
-        }
-        
-        #temas {
-            flex-wrap: wrap;
-        }
-        
-        h2 {
-            font-size: 1.6rem;
-        }
-    }  
+@media (max-width: 1024px) {
+    .solution-grid, 
+    .objetivos-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .solution-title-block, 
+    .objetivos-title-block {
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .solution-title-block h2, 
+    .objetivos-title-block h2 {
+        text-align: center;
+    }
+
+    .insight-grid2 {
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        padding: 0 10px;
+    }
+    
+    #inicio {
+        height: 55vh;
+        margin-top: 110px; 
+    }
+
+    #inicio img {
+        width: 95%;
+    }
+
+    #temas {
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 0.95rem;
+    }
+
+    .insight-container, 
+    .insight-container2 {
+        padding: 35px 20px;
+    }
+
+    .insight-main-title, 
+    .insight-main-title2 {
+        font-size: 1.8rem;
+        margin-bottom: 35px;
+    }
+
+    .insight-block, 
+    .insight-block.reverse {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .insight-text {
+        text-align: left;
+    }
+
+    .solution-section, 
+    .objetivos-section {
+        padding: 60px 4%;
+    }
+
+    .solution-content, 
+    .objetivos-content {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .solution-title-block h2, 
+    .objetivos-title-block h2 {
+        font-size: 2.2rem;
+    }
+
+    #imagem-slide {
+        height: auto; 
+        max-height: 320px;
+    }
+
+    .botoes-slide button {
+        font-size: 1.4rem;
+        padding: 8px 16px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    #formulario, 
+    #formulario-diagnostico, 
+    #quiz {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #inicio {
+        height: 45vh;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+    }
+}
